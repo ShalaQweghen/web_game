@@ -1,0 +1,20 @@
+---
+:name: shala
+:word: crucifixion
+:board:
+- _
+- _
+- _
+- _
+- i
+- _
+- i
+- _
+- i
+- _
+- _
+:incorrect:
+- a
+- b
+- e
+:turns: 3

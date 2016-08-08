@@ -67,6 +67,7 @@ class Hangman
 	end
 
 	def loss
+		delete_save
 		return "It was your unlucky day! The secret word was #{@board.word.upcase}!"
 	end
 

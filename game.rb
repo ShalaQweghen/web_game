@@ -61,12 +61,12 @@ get "/show" do
 		@@game.board.board.each { |l| word << l << " " }
 		if @@game.player.pick == @@game.board.word || @@game.board.board.join == @@game.board.word
 			notice = @@game.word_or_letter
-			erb :win, :locals => { :notice => notice }
+			erb :end, :locals => { :notice => notice }
 		else
 			erb :show, :locals => { :word => word, :notice => notice, :incorrect => incorrect, :stickman => stickman }
 		end
 	else
 		notice = @@game.word_or_letter
-		erb :fail, :locals => { :notice => notice }
+		erb :end, :locals => { :notice => notice }
 	end
 end
