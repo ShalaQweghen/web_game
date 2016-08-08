@@ -1,1 +1,1 @@
-# web_game
+# Hangman Front End
