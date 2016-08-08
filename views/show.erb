@@ -1,7 +1,15 @@
-<p><%= notice %></p>
-<p><%= word %></p>
+<p class="index"><%= notice %></p>
+<% unless stickman.nil? %>
+	<br/>
+	<p class="stick" ><%= stickman[0] unless stickman[0].nil? %></p>
+	<p class="stick" ><%= stickman[1] unless stickman[1].nil? %></p>
+	<p class="stick" ><%= stickman[2] unless stickman[2].nil? %></p>
+	<p class="stick" ><%= stickman[3] unless stickman[3].nil? %></p>
+<% end %>
+<p class="word"><%= word %></p>
+<p class="index">Incorrect picks: <%= incorrect %>
 <form method="POST" action="/show" >
-	<label for="letter">Make a guess:</label>
-	<input id="letter" type="text" name="letter" />
+	<label class="title" for="letter">Make a guess:</label>
+	<input class="guess" id="letter" type="text" name="letter" />
 	<input type="submit" value="Submit!" />
 </form>
