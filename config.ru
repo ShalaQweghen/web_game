@@ -1,3 +1,3 @@
-require "./ceasar_cipher_sinatra"
+require "./game.rb"
 
 run Sinatra::Application
